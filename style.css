@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+.titlePanel{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+#container{
+    margin-top: 150px;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+}
+#control_panel{
+    display: flex;
+    align-items: top;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 500px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.buttons-info{
+    display: flex;
+    align-items: top;
+    flex-direction: column;
+
+}
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bar{
+    width: 8px;
+    background-color : black;
+    margin: 2px;
+}
+.arrayButtons{
+    background-color:grey;
+    color: white;
+    height: 50px;
+    min-width: 180px;
+}
+
+.info{
+    padding-left: 5px;
+    background-color:grey;
+    display: flex;
+    flex-direction: column;
+    width: 910px;
+}
+#bar_num_slider{
+width: 300px;
+}
+#delay_slider{
+width: 285px;
+
+}
+
+span{
+    display: flex;
+    flex-direction: row;
+}
+
+.ScrollBarHolder{
+    padding-right: 10px;
+}
+input[type="range"] {
+    width: 100%;
+    height: 10px;
+    -webkit-appearance: none; /* Override default appearance */
+    appearance: none;
+    background: #d3d3d3; /* Gray background */
+    border-radius: 5px;
+    outline: none; /* Remove outline */
+}
+
+/* Style the track */
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    background: #ffffff; /* Green track */
+    border-radius: 0px;
+}
+
+/* Style the thumb (handle) */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default appearance */
+    margin-top : -5px;
+    appearance: none;
+    width: 10px;
+    height: 20px;
+    background: #225cae; /* Green thumb */
+    border-radius: 0%;
+}

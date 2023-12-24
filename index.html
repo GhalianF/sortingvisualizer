@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Algorithm Visualizer</title>
+    <link rel = "stylesheet" href = "style.css">  
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ 
+</head>
+
+
+<header class = "titlePanel">
+    <div>
+        <h1>Sorting visualizer</h1>
+    </div>
+</header>
+<body>
+    
+    <div id = "container"></div>
+    <hr>
+        <div id = "control_panel">
+            <div class = "ScrollBarHolder">
+                <p>Number of Bars</p>
+
+                <span class = "ScrollBar">
+                    <p>5</p>
+                    <input type ="range" min = "5" max = "450"  value = "50" id = "bar_num_slider" class = "actual_bar">
+                    <p>500</p>
+                </span>
+                <p>Delay</p>
+                <span class = "ScrollBar">
+                    <p>0 ms</p>
+                    <input type ="range" min = "0" max = "300"  value = "50" id = "delay_slider" class = "actual_bar">
+                    <p>300 ms</p>
+                </span>
+            </div>
+            <div class="buttons-info">
+            <div >
+                <button id = "randomizeButton" class = "arrayButtons" onClick="randomize()">Randomize</button>
+                <button id = "bubblesortButton"class = "arrayButtons" onClick="sort(bubbleSort)">Bubble Sort</button>
+                <button id = "selectsortButton" class = "arrayButtons" onClick="sort(selectionSort)">Selection Sort</button>
+                <button id = "insertsortButton" class = "arrayButtons" onClick="insertionSortHolder(array)">Insertion Sort</button>
+                <button id = "quicksortButton" class = "arrayButtons" onClick="quickSortHolder(array)">Quick Sort</button>
+            </div>  
+            <div class = "info"> 
+          <p1 id = "sortingInfo">Welcome to the sorting algorithm visualizer! Select an algorithm to see how it works, play around with the number of bars, and slow down or speed up the visualizer to your liking.</p1>
+          
+            </div>
+
+    <script src = "script.js"></script>
+</body>
+</html>
